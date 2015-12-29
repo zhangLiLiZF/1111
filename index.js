@@ -7,9 +7,10 @@ var desH = 1334;  //设计稿高度
 //适配当前设备
 /*main.style.webkitTransform = "scale(" + winH / desH + ")";*/  //缩小(scale)(设备的高度 / 设计稿的高度)
 if (winW / winH > desW / desH) {
-    main.style.webkitTransform = "scale(" + winW / desW + ")";
-} else {
     main.style.webkitTransform = "scale(" + winH / desH + ")";
+} else {
+
+    main.style.webkitTransform = "scale(" + winW / desW + ")";
 }
 //类数组转换成数组循坏
 //forEach循坏形参 当前元素
