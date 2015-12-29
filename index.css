@@ -1,4 +1,4 @@
-body,div,ul,li,p,h2,h6{
+body,div,ul,li,p,h2,h3,h6{
     margin:0;
     padding:0;
     /*-webkit-animation-fill-mode: both;
@@ -21,6 +21,8 @@ html,body{
     width:750px;
     height:1334px;
     -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     perspective: 800px;
 }
@@ -30,22 +32,23 @@ html,body{
 .icon-up{
     position: absolute;
     left: 50%;
-    bottom:5%;
+    bottom:10%;
     z-index: 999;
     margin-left: -18px;
     height: auto;
     width: 36px;
 }
 .up-img{
+    -webkit-animation: moveToBottom ease 1.5s both infinite;
     animation: moveToBottom ease 1.5s both infinite;
 }
 @-webkit-keyframes moveToBottom {
     from { }
-    to { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(100%);transform: translateY(100%); }
 }
 @keyframes moveToBottom {
-        from { }
-        to { -webkit-transform: translateY(100%); transform: translateY(100%); }
+    from { }
+    to { -webkit-transform: translateY(100%); transform: translateY(100%); }
 }
 /*音乐*/
 .audio{
@@ -70,50 +73,65 @@ html,body{
 }
 .bounce:hover{
     -webkit-animation-play-state:paused;
+    animation-play-state:paused;
 }
 @-webkit-keyframes animations {
     0%{
         -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
         opacity: 1;
     }
     25%{
         -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
         opacity: 0.8;
     }
     50%{
         -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
         opacity: 0.6;
     }
     75%{
         -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
         opacity: 0.8;
     }
     100%{
         -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
         opacity: 1;
     }
 }
 @keyframes animations {
     0%{
         -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
         opacity: 1;
     }
     25%{
         -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
         opacity: 0.8;
     }
     50%{
         -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
         opacity: 0.6;
     }
     75%{
         -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
         opacity: 0.8;
     }
     100%{
         -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
         opacity: 1;
     }
+}
+.slide{
+    width:100%;
+    height: 100%;
 }
 .slide>li{
     position: absolute;
@@ -166,7 +184,7 @@ html,body{
     }
 }
 
-/*第一张*/
+/*-------------------第一张----------------------*/
 .a1-content{
     position: absolute;
     width: 300px;
@@ -194,7 +212,7 @@ html,body{
     line-height: 100px;
     font-size: 100px;
 }
-/*第二张 上面*/
+/*-------------------第二张 上面----------------------*/
 .a2-top{
     position: relative;
     top:-40%;
@@ -203,8 +221,8 @@ html,body{
 #a2 .a2-top{
     -webkit-animation-name: myMove;
     animation-name: myMove;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     /*-webkit-animation: myMove 1s linear; /!*infinite*!/*/
@@ -222,31 +240,13 @@ html,body{
     animation-duration: 1.5s;
 }
 @-webkit-keyframes myMove {
-    10% {
-        top: -30%;
-    }
-    20%{
+    25%{
         top: -20%;
     }
-    30% {
-        top: -10%;
-    }
-    40% {
+    50% {
         top: 0%;
     }
-    50%{
-        top:10%;
-    }
-    60%{
-        top:20%;
-    }
-    70%{
-        top:30%;
-    }
-    80%{
-        top:20%;
-    }
-    90%{
+    75%{
         top:10%;
     }
     100%{
@@ -254,36 +254,18 @@ html,body{
     }
 }
 @keyframes myMove {
-10% {
-    top: -30%;
-}
-20%{
-    top: -20%;
-}
-30% {
-    top: -10%;
-}
-40% {
-    top: 0%;
-}
-50%{
-    top:10%;
-}
-60%{
-    top:20%;
-}
-70%{
-    top:30%;
-}
-80%{
-    top:20%;
-}
-90%{
-    top:10%;
-}
-100%{
-    top:0%;
-}
+    25%{
+        top: -20%;
+    }
+    50% {
+        top: 0%;
+    }
+    75%{
+        top:10%;
+    }
+    100%{
+        top:0%;
+    }
 }
 .swing {
     /*-webkit-animation-name: swing;
@@ -371,7 +353,7 @@ html,body{
     left:5%;
     top:55%;
 }
-/*第二张 下面*/
+/*-------------------第二张下面----------------------*/
 .a2-bot{
     position: relative;
     height: 70%;
@@ -491,7 +473,7 @@ html,body{
     letter-spacing: 2px;
 }
 
-/*第三张*/
+/*-------------------第三张----------------------*/
 .a3-top{
     width:100%;
     height: 30%;
@@ -514,8 +496,8 @@ html,body{
     left:20%;
 }
 .a3-Left img:nth-child(1){
-     top:6%;
- }
+    top:6%;
+}
 .a3-Left img:nth-child(2){
     top:57%;
 }
@@ -637,7 +619,7 @@ html,body{
     animation-delay: 2.4s;
 }
 
-/*第四张*/
+/*-------------------第四张----------------------*/
 .a4 .a4-top{
     position: absolute;
     top:5%;
@@ -750,7 +732,7 @@ html,body{
     -webkit-transition: 1s;
 }
 .a4-bot{
-    position: absolute;
+    position: relative;
     top:64%;
     left: 50%;
     margin-left: -45%;
@@ -759,62 +741,65 @@ html,body{
 }
 .a4-bot p{
     position: absolute;
-    top:300%;
+    left:300%;
+    top:50%;
     width:100%;
 }
-.a4-bot p{
-    position: absolute;
-    top:300%;
+#a4 .a4-bot p{
     -webkit-animation-name: a4-Bot;
     animation-name: a4-Bot;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    /*-webkit-animation-fill-mode: both;
-    animation-fill-mode: both;*/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 @-webkit-keyframes a4-Bot {
     25% {
-        top: 200%;
+        left: 150%;
     }
-    50%{
-        top: 100%;
-    }
-    100% {
-        top: 65%;
-    }
-}
-/*@keyframes a4-Bot {
-    25% {
-        top: -75%;
-    }
-    50%, 100% {
-        top: 0;
+    50%,100%{
+        left: 0;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
     75% {
-        top: 75%;
+        left: -150%;
     }
-}*/
-.a4-bot p:nth-of-type(1){
-    top:0;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
 }
-.a4-bot p:nth-of-type(2){
-    top:26%;
+@keyframes a4-Bot {
+    25% {
+        left: 150%;
+    }
+    50%,100%{
+        left: 0;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    75% {
+        left: -150%;
+    }
+}
+#a4 .a4-bot p:nth-of-type(1){
+    top:0;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
-.a4-bot p:nth-of-type(3){
-    top:51%;
+#a4 .a4-bot p:nth-of-type(2){
+    top:26%;
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
-.a4-bot p:nth-of-type(4){
-    top:76%;
+#a4 .a4-bot p:nth-of-type(3){
+    top:51%;
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
+}
+#a4 .a4-bot p:nth-of-type(4){
+    top:76%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
 .a4-bot p span{
     font-size: 24px;
@@ -828,29 +813,194 @@ html,body{
     position: absolute;
     letter-spacing: 3px;
 }
-
-
-
-
-
-
-
-
-
-.a5{
-    position: absolute;
+/*-------------------第五张----------------------*/
+.a5-top{
+    margin:5% 0;
+    width:100%;
+    height: 20%;
+    text-align: center;
+}
+.a5-top h2{
+    line-height: 100px;
+    font-size: 70px;
+}
+.a5-top p{
+    line-height: 50px;
+    font-size: 35px;
+}
+/*下面左边*/
+.a5-bot{
+    position: relative;
     left:50%;
-    top:10%;
-    margin-left:-230px;
-    widtH:460px;
-    height:220px;
-    background: url(images/d1.png) no-repeat center;
+    top:0;
+    margin-left:-45%;
+    width:90%;
+    height: 70%;
 }
-#a5{
-    -webkit-transform: rotateY(720deg);
-    -webkit-transition:1s;
+.a5-botLeft{
+    position: absolute;
+    width: 10%;
+    height: 100%;
 }
-/*第四张*/
+.a5-botLeft li{
+    position: relative;
+    height: 33%;
+}
+.a5-botLeft li:nth-child(2){
+    top:15%;
+}
+.a5-botLeft li img{
+    position: absolute;
+    top:0;
+    -webkit-animation: myTop-Bot 5s linear 2s 2 both;
+    animation: myTop-Bot 5s linear 2s 2 both;
+}
+@-webkit-keyframes myTop-Bot {
+    25%,75%{
+        top:50%;
+    }
+    50%{
+        top:100%;
+    }
+    100%{
+        top:0;
+    }
+}
+@keyframes myTop-Bot {
+    25%,75%{
+        top:50%;
+    }
+    50%{
+        top:100%;
+    }
+    100%{
+        top:0;
+    }
+}
+/*下面右边*/
+.a5-botRight{
+    position: absolute;
+    left:10%;
+    width: 90%;
+    height: 100%;
+}
+.a5-botRight li{
+    position: relative;
+    height:48%;
+}
+.a5-botRight li h3{
+    line-height: 50px;
+    font-size: 34px;
+    color: #db3839;
+}
+.a5-botRight li p{
+    position: absolute;
+    top:300%;
+    /*line-height: 50px;*/
+    font-size: 28px;
+}
+#a5 .a5-botRight li p{
+    -webkit-animation: myBot 7s linear both;
+}
+@-webkit-keyframes myBot {
+    0%{
+        -webkit-transform: translate(0,600%);
+    }
+    25%{
+        -webkit-transform: translate(0,450%);
+    }
+    50%{
+        -webkit-transform: translate(0,300%);
+    }
+    75%{
+        -webkit-transform: translate(0,150%);
+    }
+    100%{
+        -webkit-transform: translate(0,0%);
+    }
+}
+@keyframes myBot {
+    0%{
+        -webkit-transform: translate(0,600%);
+    }
+    25%{
+        -webkit-transform: translate(0,450%);
+    }
+    50%{
+        -webkit-transform: translate(0,300%);
+    }
+    75%{
+        -webkit-transform: translate(0,150%);
+    }
+    100%{
+        -webkit-transform: translate(0,0%);
+    }
+}
+#a5 .a5-botRight li p:nth-of-type(4){
+    -webkit-animation: hello 7s linear both;
+}
+@-webkit-keyframes hello{
+    0%{
+        -webkit-transform: translate(0,300%);
+    }
+    25%{
+        -webkit-transform: translate(0,300%);
+    }
+    50%{
+        -webkit-transform: translate(0,200%);
+    }
+    75%{
+        -webkit-transform: translate(0,100%);
+    }
+    100%{
+        -webkit-transform: translate(0,0%);
+    }
+}
+@keyframes hello{
+    0%{
+        -webkit-transform: translate(0,400%);
+    }
+    25%{
+        -webkit-transform: translate(0,300%);
+    }
+    50%{
+        -webkit-transform: translate(0,200%);
+    }
+    75%{
+        -webkit-transform: translate(0,100%);
+    }
+    100%{
+        -webkit-transform: translate(0,0%);
+    }
+}
+#a5 .a5-botRight li p:nth-of-type(1){
+    color: #11c900;
+    top:12%;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+#a5 .a5-botRight li p:nth-of-type(2){
+    top:24%;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+}
+#a5 .a5-botRight li p:nth-of-type(3){
+    top:36%;
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+}
+#a5 .a5-botRight li p:nth-of-type(4){
+    top:48%;
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
+}
+#a5 .a5-botRight li p:nth-of-type(5){
+    top:70%;
+    -webkit-transition-delay: 6s;
+    transition-delay: 6s;
+}
+
+/*-------------------第六张----------------------*/
 .a6 p{
     position: absolute;
     width:0;
