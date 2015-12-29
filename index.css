@@ -32,7 +32,7 @@ html,body{
 .icon-up{
     position: absolute;
     left: 50%;
-    bottom:10%;
+    bottom:5%;
     z-index: 999;
     margin-left: -18px;
     height: auto;
