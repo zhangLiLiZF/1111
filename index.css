@@ -19,7 +19,7 @@ html,body{
     top:0;
     margin-left:-320px;
     width:640px;
-    height:960px;
+    height:1135px;
     -webkit-transform-origin: top;
     transform-origin: top;
     -webkit-transform-style: preserve-3d;
@@ -32,7 +32,7 @@ html,body{
 .icon-up{
     position: absolute;
     left: 50%;
-    bottom:5%;
+    bottom:10%;
     z-index: 999;
     margin-left: -18px;
     height: auto;
