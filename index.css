@@ -17,9 +17,9 @@ html,body{
     position: absolute;
     left:50%;
     top:0;
-    margin-left:-375px;
-    width:750px;
-    height:1334px;
+    margin-left:-320px;
+    width:640px;
+    height:960px;
     -webkit-transform-origin: top;
     transform-origin: top;
     -webkit-transform-style: preserve-3d;
@@ -183,7 +183,6 @@ html,body{
         transform: scale3d(1, 1, 1);
     }
 }
-
 /*-------------------第一张----------------------*/
 .a1-content{
     position: absolute;
