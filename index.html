@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title></title>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-<div class="audio">
-    <img src="images/audio.png" class="bounce"/>
-    <audio src="images/audio.mp3" autoplay="autoplay" loop></audio>
+<div class="music bounce">
+    <!--<img src="images/audio.png" class="bounce"/>-->
+    <audio src="images/audio.mp3" loop preload="none"></audio>
     <!--preload="auto" 进入页面就开始加载资源
     preload="metadata" 进入页面只先加载音频文件的头信息
     preload="none" 进入页面资源不加载，只有播放的时候才开始加载
@@ -172,6 +172,7 @@
     </ul>
 </div>
 <img class="icon-up up-img" src="images/icon_up.png" />
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
