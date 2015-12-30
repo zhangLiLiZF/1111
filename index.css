@@ -817,7 +817,6 @@ html,body{
 }
 .a4-bot p span:nth-child(2){
     position: absolute;
-    letter-spacing: 1px;
 }
 /*-------------------第五张----------------------*/
 .a5-top{
@@ -906,49 +905,12 @@ html,body{
     font-size: 20px;
 }
 #a5 .a5-botRight li p{
-    -webkit-animation: myBot 7s linear both;
+    -webkit-animation: myBot 6s linear both;
 }
 @-webkit-keyframes myBot {
     0%{
-          -webkit-transform: translate(0,600%);
+          -webkit-transform: translate(0,400%);
       }
-    25%{
-        -webkit-transform: translate(0,450%);
-    }
-    50%{
-        -webkit-transform: translate(0,300%);
-    }
-    75%{
-        -webkit-transform: translate(0,150%);
-    }
-    100%{
-        -webkit-transform: translate(0,0%);
-    }
-}
-@keyframes myBot {
-    0%{
-        -webkit-transform: translate(0,600%);
-    }
-    25%{
-        -webkit-transform: translate(0,450%);
-    }
-    50%{
-        -webkit-transform: translate(0,300%);
-    }
-    75%{
-        -webkit-transform: translate(0,150%);
-    }
-    100%{
-        -webkit-transform: translate(0,0%);
-    }
-}
-#a5 .a5-botRight li p:nth-of-type(4){
-    -webkit-animation: hello 7s linear both;
-}
-@-webkit-keyframes hello{
-    0%{
-        -webkit-transform: translate(0,300%);
-    }
     25%{
         -webkit-transform: translate(0,300%);
     }
@@ -962,7 +924,7 @@ html,body{
         -webkit-transform: translate(0,0%);
     }
 }
-@keyframes hello{
+@keyframes myBot {
     0%{
         -webkit-transform: translate(0,400%);
     }
@@ -979,21 +941,52 @@ html,body{
         -webkit-transform: translate(0,0%);
     }
 }
+#a5 .a5-botRight li p:nth-of-type(4){
+    -webkit-animation: hello 6s linear both;
+}
+@-webkit-keyframes hello{
+    0%{
+        -webkit-transform: translate(0,200%);
+        transform: translate(0,200%);
+    }
+    50%{
+        -webkit-transform: translate(0,100%);
+        transform: translate(0,100%);
+    }
+    100%{
+        -webkit-transform: translate(0,0%);
+        transform: translate(0,0%);
+    }
+}
+@keyframes hello{
+    0%{
+        -webkit-transform: translate(0,200%);
+        transform: translate(0,200%);
+    }
+    50%{
+        -webkit-transform: translate(0,100%);
+        transform: translate(0,100%);
+    }
+    100%{
+        -webkit-transform: translate(0,0%);
+        transform: translate(0,0%);
+    }
+}
 #a5 .a5-botRight li p:nth-of-type(1){
     color: rgb(99,219,88);
     top:12%;
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
 }
 #a5 .a5-botRight li p:nth-of-type(2){
     top:26%;
-    -webkit-transition-delay: 2s;
-    transition-delay: 2s;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
 }
 #a5 .a5-botRight li p:nth-of-type(3){
     top:40%;
-    -webkit-transition-delay: 3s;
-    transition-delay: 3s;
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
 }
 #a5 .a5-botRight li p:nth-of-type(4){
     top:54%;
@@ -1001,10 +994,15 @@ html,body{
     transition-delay: 4s;
 }
 #a5 .a5-botRight li p:nth-of-type(5){
-    top:80%;
-    -webkit-transition-delay: 6s;
-    transition-delay: 6s;
+    top:82%;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
 }
+/*#a5 .a5-botRight li p:nth-of-type(6){
+    top:82%;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
+}*/
 
 /*-------------------第六张----------------------*/
 .a6-content{
