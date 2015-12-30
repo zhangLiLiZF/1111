@@ -947,22 +947,23 @@ html,body{
     transition-delay: 0.5s;
 }
 #a5 .a5-botRight li p:nth-of-type(2){
-    top:26%;
+    top:24%;
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 #a5 .a5-botRight li p:nth-of-type(3){
-    top:40%;
+    top:36%;
     -webkit-transition-delay: 1.5s;
     transition-delay: 1.5s;
 }
 #a5 .a5-botRight li p:nth-of-type(4){
-    top:54%;
+    top:48%;
+    line-height: 40px;
     -webkit-transition-delay: 4s;
     transition-delay: 4s;
 }
 #a5 .a5-botRight li p:nth-of-type(5){
-    top:82%;
+    top:72%;
     -webkit-transition-delay: 5s;
     transition-delay: 5s;
 }
