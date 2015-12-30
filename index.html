@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
+<div class="audio">
+    <img src="images/audio.png" class="bounce"/>
+    <audio src="images/audio.mp3" autoplay="autoplay" loop></audio>
+    <!--preload="auto" 进入页面就开始加载资源
+    preload="metadata" 进入页面只先加载音频文件的头信息
+    preload="none" 进入页面资源不加载，只有播放的时候才开始加载
+    支持3种音乐格式   MP3(全部支持) wav(不支持IE，文件小) ogg
+    -->
+    <!--<audio controls loop autoplay preload="metadata">
+        <source src="images/audio.mp3" type="audio/mpeg" />
+        <source src="images/audio.mp3" type="audio/wav" />
+        <source src="images/audio.mp3" type="audio/ogg" />
+        您的当前浏览器不支持audio~~
+    </audio>-->
+</div>
 <div id="main">
-    <div class="audio">
-        <img src="images/audio.png" class="bounce"/>
-        <audio src="images/audio.mp3" autoplay="autoplay" loop></audio>
-        <!--preload="auto" 进入页面就开始加载资源
-        preload="metadata" 进入页面只先加载音频文件的头信息
-        preload="none" 进入页面资源不加载，只有播放的时候才开始加载
-        支持3种音乐格式   MP3(全部支持) wav(不支持IE，文件小) ogg
-        -->
-        <!--<audio controls loop autoplay preload="metadata">
-            <source src="images/audio.mp3" type="audio/mpeg" />
-            <source src="images/audio.mp3" type="audio/wav" />
-            <source src="images/audio.mp3" type="audio/ogg" />
-            您的当前浏览器不支持audio~~
-        </audio>-->
-    </div>
     <ul class="slide">
-        <li>
+        <li class="zIndex">
             <div class="a1">
                 <div class="a1-content">
                     <img src="images/a1-content.png" />
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </li>
-        <li class="zIndex">
+        <li>
             <div class="a5">
                 <div class="a5-top">
                     <h2>PROJECT</h2>
@@ -166,8 +166,8 @@
             </div>
         </li>
     </ul>
-    <img class="icon-up up-img" src="images/icon_up.png" />
 </div>
+<img class="icon-up up-img" src="images/icon_up.png" />
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
