@@ -1,8 +1,8 @@
 body,div,ul,li,p,h2,h3,h6{
     margin:0;
     padding:0;
-    /*-webkit-animation-fill-mode: both;
-    animation-fill-mode: both;*/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 ul{
     list-style: none;
@@ -16,7 +16,6 @@ html,body{
 }
 /*-----------------------音乐-------------------------*/
 .music{
-    display: none;
     position: absolute;
     top: 2%;
     right: 2%;
@@ -209,9 +208,6 @@ html,body{
     animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    /*-webkit-animation: myMove 1s linear; /!*infinite*!/*/
-    /*animation: myMove 1s linear;*/
-    /*当动画模拟完成后让当前元素的位置停留在最后一帧的位置*/
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -380,48 +376,48 @@ html,body{
     left:0;
     -webkit-transform: rotate(720deg);
     transform: rotate(720deg);
-    -webkit-transition-delay: 3s;
-    transition-delay: 3s;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
 }
 #a2 .a2-bot div img:nth-of-type(2){
     top:48%;
     left:8%;
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
-    -webkit-transition-delay: 5s;
-    transition-delay: 5s;
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
 }
 #a2 .a2-bot div img:nth-of-type(3){
     top:70%;
     left:20%;
     -webkit-transform: rotate(720deg);
     transform: rotate(720deg);
-    -webkit-transition-delay: 7s;
-    transition-delay: 7s;
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
 }
 #a2 .a2-bot div img:nth-of-type(4){
     top:65%;
     left:63%;
     -webkit-transform: rotate(720deg);
     transform: rotate(720deg);
-    -webkit-transition-delay: 7s;
-    transition-delay: 7s;
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
 }
 #a2 .a2-bot div img:nth-of-type(5){
     top:45%;
     left:80%;
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
-    -webkit-transition-delay: 5s;
-    transition-delay: 5s;
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
 }
 #a2 .a2-bot div img:nth-of-type(6){
     top:20%;
     left:84%;
     -webkit-transform: rotate(720deg);
     transform: rotate(720deg);
-    -webkit-transition-delay: 3s;
-    transition-delay: 3s;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
 }
 #a2 .a2-bot div img:nth-of-type(7){
     left:74%;
@@ -947,31 +943,26 @@ html,body{
     transition-delay: 0.5s;
 }
 #a5 .a5-botRight li p:nth-of-type(2){
-    top:26%;
+    top:24%;
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
 }
 #a5 .a5-botRight li p:nth-of-type(3){
-    top:40%;
+    top:36%;
     -webkit-transition-delay: 1.5s;
     transition-delay: 1.5s;
 }
 #a5 .a5-botRight li p:nth-of-type(4){
-    top:54%;
+    top:48%;
+    line-height: 40px;
     -webkit-transition-delay: 4s;
     transition-delay: 4s;
 }
 #a5 .a5-botRight li p:nth-of-type(5){
-    top:82%;
+    top:72%;
     -webkit-transition-delay: 5s;
     transition-delay: 5s;
 }
-/*#a5 .a5-botRight li p:nth-of-type(6){
-    top:82%;
-    -webkit-transition-delay: 5s;
-    transition-delay: 5s;
-}*/
-
 /*-------------------第六张----------------------*/
 .a6-content{
     position: absolute;

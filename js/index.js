@@ -70,15 +70,13 @@ window.addEventListener("load", function () {
     //init music
     var music = document.querySelector(".music");
     var musicAudio = music.querySelector("audio");
-
     //canplay:音频资源文件已经加载一部分,可以播放了
     //canplaythrough:音频文件已经全部加载完成,播放不会出现卡顿
     musicAudio.addEventListener("canplay", function () {
-        music.style.display = "block";
+       /* music.style.display = "block";*/
         music.className = "music bounce";
     }, false);
     musicAudio.play();
-
     $t.tap(music, {
         end: function () {
             if (musicAudio.paused) {
