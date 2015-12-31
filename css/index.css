@@ -1,4 +1,4 @@
-body,div,ul,li,p,h2,h3,h6{
+body,div,ul,li,p,h2,h3,h6,a{
     margin:0;
     padding:0;
     -webkit-animation-fill-mode: both;
@@ -6,6 +6,10 @@ body,div,ul,li,p,h2,h3,h6{
 }
 ul{
     list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #ff0000;
 }
 html,body{
     position: relative;
@@ -75,6 +79,7 @@ html,body{
 }
 /*-----------------------箭头-------------------------*/
 .icon-up{
+    display: none;
     position: absolute;
     left: 50%;
     bottom:4%;
@@ -569,7 +574,6 @@ html,body{
     top: 19%;
     -webkit-animation-delay: 1.8s;
     animation-delay: 1.8s;
-    color: rgb(255,0,0);
 }
 #a3 .a3-Right .a3-RightBot p:nth-of-type(3){
     top: 38%;
